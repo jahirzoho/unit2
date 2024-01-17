@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+               body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        iframe {
+           min-width:1080px; /* Set the width to match the TV resolution */
+            min-height: 1920px; /* Set the height to match the TV resolution */
+            border: none;
+        }
+    </style>
+    <title>TV Web Browser</title>
+</head>
+<body>
+
+    <iframe id="zohoId"  frameborder='0' scrolling='yes' src='https://creatorapp.zohopublic.in/info_dindigulscans/dindigul-scans/page-perma/Kanban_Report_unit_2/r1sO3z4DxpMeXF8Zbdxjm5tSn5nQeEEaKPBVDQgG7BkSvweaj1UHCt73GQxdzh9zgmQ8wdawOSKMeAZP8wr3WRsmYPzUBsHaveTQ'></iframe>
+    <script>
+        setInterval(function () {
+            var iframe = document.getElementById('zohoId');
+            iframe.src = iframe.src;
+        }, 16000); 
+    </script>
+</body>
+</html>
